@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+    <title>Exercice3</title>
+    <circle cx="100" cy="100" r="20" stroke="blue" stroke-width="5" fill="none">
+        <animateTransform id="c1" attributeName="transform" attributeType="XML" type="translate" from="0 0" to="100 200" dur="1s" fill="freeze" />
+        <animateTransform id="c2" attributeName="transform" attributeType="XML" type="translate" from="100 200" to="150 100" dur="0.5s" begin="c1.end" fill="freeze" />
+        <animateTransform id="c3" attributeName="transform" attributeType="XML" type="translate" from="150 100" to="200 200" dur="0.5s" begin="c2.end" fill="freeze" />
+        <animateTransform id="c4" attributeName="transform" attributeType="XML" type="translate" from="200 200" to="230 150" dur="0.5s" begin="c3.end" fill="freeze" />
+        <animateTransform id="c5" attributeName="transform" attributeType="XML" type="translate" from="230 150" to="260 200" dur="0.5s" begin="c4.end" fill="freeze" />
+        <animateTransform id="c6" attributeName="transform" attributeType="XML" type="translate" from="260 200" to="280 170" dur="0.5s" begin="c5.end" fill="freeze" />
+        <animateTransform id="c7" attributeName="transform" attributeType="XML" type="translate" from="280 170" to="300 200" dur="0.5s" begin="c6.end" fill="freeze" />
+        <animateTransform id="c8" attributeName="transform" attributeType="XML" type="translate" from="300 200" to="400 200" dur="2s" begin="c7.end" fill="freeze" />
+    </circle>
+
+    <circle cx="525" cy="320" r="20" stroke="white" stroke-width="5" fill="none">
+        <animate id="c9" attributeName="stroke" begin="c8.end" dur="2s" from="white" to="yellow" fill="freeze"/>
+    </circle>
+    <circle cx="550" cy="300" r="20" stroke="white" stroke-width="5" fill="none">
+        <animate id="c10" attributeName="stroke" begin="c9.end" dur="2s" from="white" to="black" fill="freeze"/>
+    </circle>
+    <circle cx="575" cy="320" r="20" stroke="white" stroke-width="5" fill="none">
+        <animate id="c11" attributeName="stroke" begin="c10.end" dur="2s" from="white" to="lime" fill="freeze"/>
+    </circle>
+    <circle cx="600" cy="300" r="20" stroke="white" stroke-width="5" fill="none">
+        <animate id="c12" attributeName="stroke" begin="c11.end" dur="2s" from="white" to="red" fill="freeze"/>
+    </circle>
+
+</svg>
